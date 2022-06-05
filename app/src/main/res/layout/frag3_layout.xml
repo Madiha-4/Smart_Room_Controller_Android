@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/r_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/light_3"
+        android:textColor="#95FDEE"
+        android:textSize="55sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="83dp"
+        android:layout_height="121dp"
+        android:layout_gravity="center"
+        android:src="@drawable/light_off"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchButton"
+        android:layout_width="142dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:checked="false"
+        android:paddingTop="30dp"
+        android:text="Power"
+        android:textColor="#95FDEE"
+        android:textOff="@string/off"
+        android:textOn="@string/on"
+        android:textSize="25sp"
+        android:thumb="@drawable/switch_thumb"
+        app:showText="true"
+        app:switchMinWidth="56dp"
+        app:track="@drawable/switch_track" />
+
+</LinearLayout>
